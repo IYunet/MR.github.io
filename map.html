@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE htm>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Карта</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/Background/animations.css">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
@@ -13,7 +12,7 @@
     <link rel="stylesheet" href="CSS/mapCSS.css">
     <script src="JavaScript/menuJS.js" defer></script>
     <script src="JavaScript/settingsMap.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdPr_FmalR9lQbsa5M26WnrxaJiIO19yo&callback=initMap" async defer></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=4df9a200-9e9c-47d1-893c-e3897c3ef648"></script>
 </head>
 
 <body>
@@ -35,6 +34,7 @@
         <div class="wrapper container">
             <div class="content">
                 <div id="map"></div>
+				<input type="button" id="destroyButton" value="Удалить карту"/>
             </div>
         </div>
         <div class="backwrap gradient">
@@ -42,5 +42,6 @@
         </div>
     </main>
 </body>
+
 
 </html>
