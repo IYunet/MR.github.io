@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="CSS/Background/settingsBackground.css">
     <link rel="stylesheet" href="CSS/mapCSS.css">
     <script src="JavaScript/menuJS.js" defer></script>
+    <script src="JavaScript/settingsMap.js" defer></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=4df9a200-9e9c-47d1-893c-e3897c3ef648&lang=ru_RU"></script>
 </head>
 
@@ -30,23 +31,7 @@
 				<a href="#" class="imgInNav"><img src="image/soundcloud.png" alt="soundcloud"></a> <a href="#">Подать заявку</a> <a href="#">Контакты</a> </div> <img src="image/burger.png" alt="burger" id="menu" onclick="menu();"><img src="image/cross.png" alt="cross"> </nav>
 		<div id="navForPhones" style="display: none;"> <a href="index.html">Главная</a> <a href="#">Карта</a> <a href="#">Подать заявку</a> <a href="#">Контакты</a> </div>
 	</header>
-	<style>
-		#first_map{
-		height: 100%;
-		width: 100%;
-		}
-	</style>
-    <script> 
-		ymaps.ready(init);
-		function init(){
-			var moscow_map = new ymaps.Map("first_map", {
-					center: [55.76, 37.64],
-					zoom: 10
-				});
-		}
-		
-	</script>
-        
+	
     
 	
        

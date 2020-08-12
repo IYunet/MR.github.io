@@ -1,5 +1,7 @@
-#map {
-    width: 100%;
+#first_map {
+	margin: auto;	
+	margin-top: 10px;
+    width: 90%;
     height: calc(100vh - 67px);
 }
 
@@ -13,7 +15,7 @@
         display: flex;
         align-items: center;
     }
-    #map {
+    #first_map {
         height: calc(100vh - 167px);
         border: 10px solid #000;
     }
