@@ -9,10 +9,19 @@ ymaps.ready(init);
 			var pointA = [52.293568, 104.286110],
 			pointB = [52.291487, 104.280185],
 			pointC = [52.287963, 104.280718],
-        /**
-         * Создаем мультимаршрут.
-         * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/multiRouter.MultiRoute.xml
-         */
+			BalloonContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<audio controls>'+
+			'<source src="/music/mirror.ogg">'+
+			'</audio>', {build: function () {
+            }, clear: function () {
+               
+            }
+			});
+			var placemark = new ymaps.Placemark(pointA, {
+				balloonContentLayout: BalloonContentLayout,
+            
+				balloonPanelMaxMapArea: 0
+			});
 			multiRoute = new ymaps.multiRouter.MultiRoute({
 				referencePoints: [
 					pointA,
@@ -21,10 +30,14 @@ ymaps.ready(init);
 				params: {
                 //Тип маршрутизации - пешеходная маршрутизация.
 					routingMode: 'pedestrian'
+					
 				}
 			}, 	{
+			  wayPointVisible:false,
             // Автоматически устанавливать границы карты так, чтобы маршрут был виден целиком.
             boundsAutoApply: true
+			
 			});
+			map.geoObjects.add(placemark);
 			map.geoObjects.add(multiRoute);
 		}
