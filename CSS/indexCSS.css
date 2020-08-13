@@ -6,20 +6,21 @@
 }
 
 .blockMR {
-    display: flex;
+	
+	
     text-align: center;
     flex-flow: column;
-    height: calc((100vh - 67px)/3);
-    width: 75%;
+    height: calc((100vh - 67px)/2.2);
+    width: 100%;
     background-color: #000;
-    border-radius: calc((100vh - 67px)/6);
+    border-radius: calc((100vh - 67px)/10);
     color: #fff;
     font-family: 'Oswald', sans-serif;
 }
 
 .blockMR h1 {
     margin-top: calc(((100vh - 67px)/3 - 227px)/2);
-    font-size: 100px;
+    font-size: 80px;
 }
 
 .blockMR p {
@@ -82,6 +83,87 @@
         font-size: 33px;
     }
     .blockMR p {
+        font-size: 10px;
+    }
+}
+.blockContact {
+	
+	
+    text-align: center;
+    flex-flow: column;
+    height: calc((100vh - 67px)/5);
+    width: 60%;
+    background-color: #000;
+    border-radius: calc((100vh - 67px)/10);
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+.blockContact h1 {
+    margin-top: calc(((100vh - 67px)/3 - 227px)/2);
+    font-size: 80px;
+}
+
+.blockContact p {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 850px) {
+    .blockContact h1 {
+        margin-top: calc(((100vh - 67px)/3 - 170px)/2);
+        font-size: 75px;
+    }
+    .blockContact p {
+        font-size: 22.5px;
+    }
+}
+
+@media screen and (max-height: 650px) {
+    .blockContact h1 {
+        margin-top: calc(((100vh - 67px)/3 - 170px)/2);
+        font-size: 75px;
+    }
+    .blockContact p {
+        font-size: 22.5px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .blockContact h1 {
+        margin-top: calc(((100vh - 67px)/3 - 113px)/2);
+        font-size: 50px;
+    }
+    .blockContact p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .blockContact h1 {
+        margin-top: calc(((100vh - 67px)/3 - 113px)/2);
+        font-size: 50px;
+    }
+    .blockContact p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .blockContact h1 {
+        margin-top: calc(((100vh - 67px)/3 - 75px)/2);
+        font-size: 33px;
+    }
+    .blockContact p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-height: 350px) {
+    .blockContact h1 {
+        margin-top: calc(((100vh - 67px)/3 - 75px)/2);
+        font-size: 33px;
+    }
+    .blockContact p {
         font-size: 10px;
     }
 }
