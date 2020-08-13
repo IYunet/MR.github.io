@@ -42,6 +42,7 @@ ymaps.ready(init);
                 //routingMode: 'masstransit'
             }
         }, {
+			 boundsAutoApply: true,
             /**
              * Макет геообъекта.
              * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/GeoObject.xml#param-options
