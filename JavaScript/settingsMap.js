@@ -14,6 +14,7 @@ ymaps.ready(init);
 				"<audio controls>"+
 				'<source src="/music/Peace.ogg">'+
 				"</audio>"+
+				"<p>Ваш браузер не поддерживает аудио</p>"+
 				'<a class="close" href="#">&times;</a>'+
 				'/<div>', {
 
@@ -42,44 +43,10 @@ ymaps.ready(init);
                 //routingMode: 'masstransit'
             }
         }, {
-			 boundsAutoApply: true,
-            /**
-             * Макет геообъекта.
-             * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/GeoObject.xml#param-options
-             */
+			boundsAutoApply: true,
             balloonLayout: balloonLayout,
             // Отключаем режим панели для балуна.
             balloonPanelMaxMapArea: 0
         });
-			//BalloonContentLayout = ymaps.templateLayoutFactory.createClass(
-            //'<audio controls>'+
-			//'<source src="/music/mirror.ogg">'+
-			//'</audio>', {build: function () {
-            //}, clear: function () {
-               
-            //}
-			//});
-			//var placemark = new ymaps.Placemark(pointA, {
-			//	balloonContentLayout: BalloonContentLayout,
-            
-			//	balloonPanelMaxMapArea: 0
-			//});
-			//multiRoute = new ymaps.multiRouter.MultiRoute({
-			//	referencePoints: [
-			//		pointA,
-			//		pointB,
-			//		pointC				],
-			//	params: {
-            //    //Тип маршрутизации - пешеходная маршрутизация.
-			//		routingMode: 'pedestrian'
-			//		
-			//	}
-			//}, 	{
-			//  wayPointVisible:false,
-            // Автоматически устанавливать границы карты так, чтобы маршрут был виден целиком.
-            //boundsAutoApply: true
-			
-			//});
-			//map.geoObjects.add(placemark);
 			map.geoObjects.add(multiRoute);
 		}
